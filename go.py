@@ -2035,7 +2035,7 @@ def bestWordForDict2(allwords):
 		for i2 in range(i1, len(allwords)):
 			w = allwords[i1] + allwords[i2]
 			wscore = calcScore(w,customLetterFreq)
-			if(wscore>20000):
+			if(wscore>30000):
 				allWordScores[w] = wscore
 			if(wscore > maxScore):
 				print(wordToUse)
